@@ -1,0 +1,85 @@
+Introduction
+Hello dear steemians, today I want to make you a tutorial a little different, oriented to learn programming from scratch using diagrams and Ruby language. In this tutorial we will be doing programming examples where we will explain the logic of the program through Data Diagrams, a powerful tool used by programmers and then we will write them in Ruby programming language and explain them step by step.
+I will not explain how to install it since there is a lot of information in many places on how to install the Ruby language, and our purpose with this tutorial is to teach you how to program using examples of all kinds and develop the learning of the Ruby programming language by looking at its use and behavior in practical cases.
+
+I invite you to enjoy this tutorial that I'm sure you will love.
+In it you will learn:
+- You will learn the use of Ruby programming language with the use of examples explained to try to make it simpler and more fun.
+This is a series of tutorials where later we will install libraries and use frameworks related to ruby and interact with the steem API, as we go forward in the tutorial.
+
+Requirements
+You must have basic programming skills to be able to install Ruby and understand some of the technical languages used in the tutorial.
+Difficulty
+Provided you have some programming experience this tutorial is basic level.
+
+
+
+Content of the tutorial:
+First case:
+In all programs I consider that the first thing we should learn is how to write messages on screen, with creating input and output data in our program so this is the first thing we will do.
+We will show it with a very simple program, the sum of two numbers. Our diagram would look like this:
+puts "enter the first number"
+number1 = gets.to_i
+puts "enter the following number"
+number2 = gets.to_i
+sum = number1 + number2
+puts " the result of the sum is: "
+puts sum
+
+it must always be considered that in the programming language Ruby the capital letters are differentiated from the small letters, therefore number, house, thing, each one is totally different to Number, House, Thing and so on, the same would apply for the reserved words of the language.
+So it is not the same to write.
+puts " enter the first number "
+Instead of:
+PUTS " enter the first number "
+
+This would give a syntax error.
+Well stemians let's go to the explanation:
+
+Let's show a message on the screen telling the operator to load the first value called number1, using the puts instruction:
+puts " enter the first number "
+For keyboard data entry we use the gets method which is an instruction that allows you to enter any character of the keyboard.
+Then we place a point in the method gets and define the type of data we want to enter, in this case, we call the method to_i to convert the data entered 
+to a whole data type.
+number1 = gets.to_i
+The variable number1 stores the integer value entered by keyboard.
+In the same way we do it with the second number:
+puts " enter the first number” 
+number1 = gets.to_i
+
+The variable "sum" stores the sum of the contents of the variables number1 and number2.
+Next we must show a message per screen:print "La suma de los dos valores es"
+and the content of the sum variable is also shown by calling the puts method, taking into account that the name of the variable is not enclosed in quotation marks:
+puts sum
+
+we can see the results on screen, and friends already made our first program in ruby, to run we must save it with a name and extension.rb and run it in the ruby console window writing ruby filename.rb and this will run, ready you are already programming in ruby.
+
+Concepts that must be clear:
+For the moment we will do all the algorithm inside a file with extension *.rb.
+
+Most frequently used reserved words in Ruby
+These are some of the most used reserved words in Ruby, I recommend you to learn them or have them at hand, this is fundamental in our way to absolutely master the Ruby programming language.
+
+class      Defines a class; closes with end.
+Def      Starts defining a method; closes with end.
+defined?	Determines whether a method, variable, or block exists.
+do Begins a block; closes with end.
+Else      Executes the code that continues if the precondition is not true. Works with if,
+elsif, unless or case.
+And      Logical operator, equal to && but with less precedence.
+end      Ends a block of code.
+False        Logical or Boolean false.
+True         Logical or Boolean true.
+for         Begins a loop for. Use with in.
+if        Executes a block of code if the conditional statement is true. Closes with end.
+in        Used with loop for.
+when        Starts a clause under.
+while        Executes a block of code while the conditional statement is true.
+yield        Executes a block passed to a method.
+FILE_        Name of the contemporary source file.
+LINE_         Number of the contemporary line in the contemporary source file.
+rescue          Evaluates an expression after an exception is raised. Used after ensure.
+retry        When called out of rescue, repeats a method call. Inside rescue jumps to a higher block.
+return        Returns a value from a method or a block.
+then       Separator used with if, unless, when, case, and rescue.
+Unless        executes a block of code if the conditional declaration is false.
+until       Executes a block of code while the conditional statement is false.
